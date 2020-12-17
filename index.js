@@ -25,7 +25,7 @@ exports.getAllInfoByISO = function(iso) {
       const ISOObject = dataJSON[iso.toUpperCase()];
 
       return {
-        iso: key,
+        iso: ISOObject.key,
         currency: ISOObject.currency,
         symbol: ISOObject.symbol,
         countryName: ISOObject.countryName
